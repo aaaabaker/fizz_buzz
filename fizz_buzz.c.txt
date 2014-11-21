@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+
+    int a = 1;
+
+    char *fizz = "Fizz", *buzz = "Buzz";
+
+    
+    while (a < 101) {
+
+        if (a % 5 == 0 && a % 3 == 0) {
+
+            printf("%s%s\n", fizz, buzz);
+
+            a++;
+
+            continue;
+
+        } else if (a % 3 == 0) {
+
+            printf("%s\n", fizz);
+
+            a++;
+
+            continue;
+
+        } else if (a % 5 == 0) {
+
+            printf("%s\n", buzz);
+
+            a++;
+
+            continue;
+
+        } else {
+
+            printf("%d\n", a);
+
+            a++;
+
+            continue;
+
+        }
+
+    }
+    return 0;
+
+}
